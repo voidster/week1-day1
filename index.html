@@ -1,39 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>
-        My First Web Pages
-    </title>
-</head>
-<body>
-
-<!-- Container to wrap everything -->
-<div id="container">
-
-    <!-- Brand of website -->
-    <header>My Web Site Brand</header>
-
-    <!-- Main Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="page2.html">About</a></li>
-            <li>Gallery</li>
-            <li><a href="page3.html">Contact</a></li>
-        </ul>
-    </nav><!-- End Main Navigation -->
-
-    <!-- Main Content -->
-    <main>
-        <h1>My First Heading</h1>
-        <p>My first paragraph. </p>
-        <img src="images/central_park.jpg" alt="Central Park" width="500"/>
-    </main><!-- End Main Content -->
-
-    <!-- Footer Information -->
-    <footer>&copy; Copyright 2024</footer>
-</div><!-- End Container -->
-</body>
+    <head>
+        <title>My First Web Pages</title>
+        <style>
+            header {
+                background: url(images/central_park.jpg) 0 -200px no-repeat;
+                background-size: 1500px;
+                height: 400px; 
+                padding-top: 100px;
+                padding-left: 100px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            li {
+                list-style-type:none;
+                display: inline;
+                padding: 0 20px;
+            }
+            li a {
+                text-decoration: none; /* Remove Underline */
+            }
+            li a:link {
+                color: #000; /* Before Click */
+            }
+            li a:visited {
+                color: #818db3; /* After Click */
+            }
+            li a:hover {
+                color: #333; /* Mouse Over */
+            }
+            li a:active {
+                color: #753a30; /* Mouse Down */
+            }
+            nav {
+                background-color: rgb(255, 245, 238);
+                height: 50px;
+                text-align: center;
+                padding-top: 2px;
+            }
+            main {
+                height: 400px; /* give some height */
+            }
+            main h1 {
+                color: rgb(129, 141, 179);
+                font-family: arial;
+            }
+            footer {
+                height: 40px;
+                background-color: rgb(129, 141, 179);
+                text-align: center;
+                padding-top: 20px;
+                color: rgb(211, 218, 240);
+            }
+        </style>
+    </head>
+    <div id="container">
+        <!-- Brand of website -->
+        <header style="font-size: 60px; color:#fff;">My Web Site Brand</header>
+    
+        <!-- Main Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
+                <li>Gallery</li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav><!-- End Main Navigation -->
+    
+        <!-- Main Content -->
+        <main>
+            <h1>My First Heading</h1>
+            <p>My first paragraph. </p>
+        </main><!-- End Main Content -->
+    
+        <!-- Footer Information -->
+        <footer>&copy; Copyright 2024</footer>
+    </div><!-- End Container -->
 </html>
 
 
