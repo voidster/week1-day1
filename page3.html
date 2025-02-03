@@ -64,5 +64,23 @@
       <footer>&copy; Copyright 2024</footer>
     </div>
     <!-- End Container -->
+    <script>
+      function toggleContactInput() {
+        var contactMethod = document.getElementById("contactMethod").value;
+        var emailSection = document.getElementById("emailSection");
+        var phoneSection = document.getElementById("phoneSection");
+
+        if (contactMethod === "email") {
+          emailSection.style.display = "block";
+          phoneSection.style.display = "none";
+        } else if (contactMethod === "phone") {
+          emailSection.style.display = "none";
+          phoneSection.style.display = "block";
+        } else {
+          emailSection.style.display = "none";
+          phoneSection.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
