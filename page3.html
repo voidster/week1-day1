@@ -39,10 +39,19 @@
             <input type="radio" name="gender" value="male" />Male
             <input type="radio" name="gender" value="female" />Female
             <label>How should we contact you?</label>
-            <select>
-              <option>Email</option>
-              <option>Phone</option>
+            <select id="contactMethod" onchange="toggleContactInput()">
+              <option value="" selected>Select One</option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
             </select>
+            <div id="emailSection" style="display: none">
+              <label>Enter your email</label>
+              <input type="email" name="email" />
+            </div>
+            <div id="phoneSection" style="display: none">
+              <label>Enter your phone</label>
+              <input type="text" name="phone" />
+            </div>
             <label>Tell us the reason of your visit today:</label>
             <textarea rows="5" cols="30"></textarea>
             <input type="submit" value="sign-up" />
